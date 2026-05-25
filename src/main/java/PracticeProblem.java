@@ -7,8 +7,7 @@ public class PracticeProblem {
 	public static String[] addString(String[] arr, String s, int num) {
 		
 		String[] arr2 = new String[arr.length+1];
-		int index;
-		index = 0
+		int index = 0
 
 		for (int i = 0; i < arr2.length; i++) {
 			
@@ -40,8 +39,7 @@ public class PracticeProblem {
 			}
 		}
 
-		int index;
-		index = 0;
+		int index = 0;
 
 		char[] arr2 = new char[arr.length - count];
 		
