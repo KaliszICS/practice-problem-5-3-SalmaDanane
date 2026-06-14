@@ -4,54 +4,38 @@ public class PracticeProblem {
 
 	}
 
-	public static String[] addString(String[] arr, String s, int num) {
-		
-		String[] arr2 = new String[arr.length+1];
-		int index = 0
-
+	public static String[] addString(String[] arr, String word, int index) {
+		String[]arr2 = new String[arr.length + 1];
+		int j = 0;
 		for (int i = 0; i < arr2.length; i++) {
-			
-			if (i != num){
-				
-				arr2[i] = arr[index];
-				index++;
-				
+			if (index == i) {
+				arr2[i] = word;
 			}
-				
 			else {
-				
-				arr2[i] = s;
+				arr2[i] = arr[j];
+				j++;
 			}
-		}
+	}
 		return arr2;
 	}
 
-	
-	public static char[] removeChars(char[] arr, char c) {
-		
+	public static char[] removeChars(char[] arr, char character) {
 		int count = 0;
-
 		for (int i = 0; i < arr.length; i++) {
-			
-			if (arr[i] == c) {
-				
-				count = count + 1;
-			}
+			if (arr[i] == character) { 
+			count++;
 		}
-
-		int index = 0;
-
-		char[] arr2 = new char[arr.length - count];
-		
-		for (int i = 0; i < arr.length; i++) {
-			
-			if (arr[i] != c) {
-				arr2[index] = arr[i];
-				index++;
-			}
+	}
+		char[]arr2 = new char[arr.length - count];
+		int j = 0;
+		for (int i2 = 0; i2 < arr.length; i2++) {
+			if (arr[i2] != character) { 
+			arr2[j] = arr[i2];
+			j++;
 		}
-
+		}
 		return arr2;
+	}	
 	}
 
-}
+
